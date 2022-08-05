@@ -1,9 +1,13 @@
 package com.example.babybugGradle.model;
 
 import com.example.babybugGradle.entity.TodoEntity;
-import com.example.babybugGradle.entity.UserEntity;
-import com.example.babybugGradle.service.TodoService;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
 public class Todo {
     private Long id;
     private String title;
@@ -15,32 +19,5 @@ public class Todo {
         model.setTitle(entity.getTitle());
         model.setCompleted(entity.getCompleted());
         return model;
-    }
-
-    public Todo() {
-    }
-
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
-    }
-
-    public String getTitle() {
-        return title;
-    }
-
-    public void setTitle(String title) {
-        this.title = title;
-    }
-
-    public Boolean getCompleted() {
-        return completed;
-    }
-
-    public void setCompleted(Boolean completed) {
-        this.completed = completed;
     }
 }

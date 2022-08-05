@@ -4,6 +4,8 @@ import com.example.babybugGradle.entity.UserEntity;
 import com.example.babybugGradle.exception.UserAlreadyExistException;
 import com.example.babybugGradle.exception.UserMissingException;
 import com.example.babybugGradle.service.UserService;
+import io.swagger.annotations.Api;
+import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
